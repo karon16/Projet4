@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <main>
+    <div id="white">
+        
+        <form method="post">
+            <!--Titre-->
+            <h1>General Information</h1>
+            <!-- Selection de titre-->
+            <select name="Title" id="Title">
+                <option value="">Title</option>
+                <option value="Mister">Mister</option>
+                <option value="Miss">Miss</option>
+                <option value="Misses">Misses</option>
+            </select>
+
+            <!--Identité de la personne-->
+            <input type="text" placeholder="First Name" id="nom1">
+            <input type="text" placeholder="Last Name" id="nom2">
+
+            <!-- position -->
+            <select name="Title">
+                <option value="">Position</option>
+                <option value="Mister">Mister</option>
+                <option value="Miss">Miss</option>
+                <option value="Misses">Misses</option>
+            </select>
+            <!--compagnie de l'utilisateur-->
+            <p><input type="text" placeholder="Company" ></p>
+
+            <!--infos boulot-->
+                <input type="text" placeholder="Business Arena" id="business1">
+                <select name="Employees" id ="business2">
+                    <option value="">Employees</option>
+                    <option value="Mister">Mister</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Misses">Misses</option>
+                </select>
+        </form>
+
+        </div>
+        <!-- deuxième bloc-->
+        <div id="gradient">
+            <form method="post">
+                <!--titre-->
+                <h1>Contact Details</h1>
+                <!--adresss-->
+                <p><input type="text" placeholder="Street + Nr" class="champfull"></p>
+                <p><input type="text" placeholder="Additional Information" class="champfull"></p>
+                <p>
+                <input type="text" pattern="[0-9]{5}" placeholder="Zip Code" id="zip">
+                <select name="place" id="place">
+                    <option value="">Place</option>
+                    <option value="Kinshasa">Kinshasa</option>
+                    <option value="Brazza-Ville">Brazza-ville</option>
+                </select>
+                </p>
+                <select name="Country" id="pays" >
+                    <option value="">Country</option>
+                    <option value="Congo DR">Congo DR</option>
+                    <option value="Congo Brazza">Congo Brazza</option>
+                </select>
+                <!--Coordonées-->
+                <p><input type="number" placeholder="Code +" id="code">
+                <input type="tel" placeholder="Phone Number" id="phone">
+                </p>
+                <p><input type="email" placeholder="Votre E-mail" class="champfull"></p>
+                <p><input type="radio" name="condition" id="term"><label for="term">I do accept the <a href="#">Terms of condition</a> of your site</label></p>
+               <!--bouton envoie-->
+                <p></p><input type="submit" value="Register Badge" class="envoyer"></p>
+
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
