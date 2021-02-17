@@ -8,10 +8,9 @@
     <title>Formulaire</title>
 </head>
 <body>
-    <main>
-    <div id="white">
-        
         <form method="post">
+            <div id="white">
+                <div id="gauche">
             <!--Titre-->
             <h1>General Information</h1>
             <!-- Selection de titre-->
@@ -44,12 +43,11 @@
                     <option value="Miss">Miss</option>
                     <option value="Misses">Misses</option>
                 </select>
-        </form>
-
+            </div>
         </div>
         <!-- deuxième bloc-->
         <div id="gradient">
-            <form method="post">
+            <div id="droite">
                 <!--titre-->
                 <h1>Contact Details</h1>
                 <!--adresss-->
@@ -63,23 +61,23 @@
                     <option value="Brazza-Ville">Brazza-ville</option>
                 </select>
                 </p>
-                <select name="Country" id="pays" >
-                    <option value="">Country</option>
+                <select name="Country" id="pays" aria-placeholder="">
+                    <option value="">Pays</option>
                     <option value="Congo DR">Congo DR</option>
                     <option value="Congo Brazza">Congo Brazza</option>
                 </select>
                 <!--Coordonées-->
                 <p><input type="number" placeholder="Code +" id="code">
-                <input type="tel" placeholder="Phone Number" id="phone">
+                <input type="tel" placeholder="Phone Number" id="phone" maxlength="9">
                 </p>
                 <p><input type="email" placeholder="Votre E-mail" class="champfull"></p>
-                <p><input type="radio" name="condition" id="term"><label for="term">I do accept the <a href="#">Terms of condition</a> <span> of your site</span></label></p>
+                <p><input type="radio" name="condition" id="term"><label for="term">I do accept the <a href="#">Terms of conditions</a> <br> <span> of your site</span></label></p>
                <!--bouton envoie-->
                 <p></p><input type="submit" value="Register Badge" class="envoyer"></p>
-
-            </form>
         </div>
-    </main>
+    </div>
+
+        </form>
     
 </body>
 </html>
