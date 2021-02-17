@@ -116,10 +116,11 @@ input:focus, select:focus{
 }
 #code{
     width: 25%;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 #phone{
-    width: 70%;
+    width: 69%;
+    margin-right: -10px;
 }
 .envoyer{
     border-radius: 30px;
