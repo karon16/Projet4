@@ -34,7 +34,7 @@
                 <option value="Misses">Misses</option>
             </select>
             <!--compagnie de l'utilisateur-->
-            <p><input type="text" placeholder="Company" ></p>
+            <input type="text" placeholder="Company" >
 
             <!--infos boulot-->
                 <input type="text" placeholder="Business Arena" id="business1">
@@ -52,29 +52,33 @@
                 <!--titre-->
                 <h1>Contact Details</h1>
                 <!--adresss-->
-                <p><input type="text" placeholder="Street + Nr" class="champfull"></p>
-                <p><input type="text" placeholder="Additional Information" class="champfull"></p>
-                <p>
+                <input type="text" placeholder="Street + Nr" class="champfull">
+                <input type="text" placeholder="Additional Information" class="champfull">
+                
                 <input type="text" pattern="[0-9]{5}" placeholder="Zip Code" id="zip">
                 <select name="place" id="place">
                     <option value="">Place</option>
                     <option value="Kinshasa">Kinshasa</option>
                     <option value="Brazza-Ville">Brazza-ville</option>
                 </select>
-                </p>
+                
                 <select name="Country" id="pays" aria-placeholder="">
                     <option value="">Pays</option>
                     <option value="Congo DR">Congo DR</option>
                     <option value="Congo Brazza">Congo Brazza</option>
                 </select>
                 <!--Coordonées-->
-                <p><input type="number" placeholder="Code +" id="code">
+                <input type="number" placeholder="Code +" id="code">
                 <input type="tel" placeholder="Phone Number" id="phone" maxlength="9">
-                </p>
-                <p><input type="email" placeholder="Votre E-mail" class="champfull"></p>
-                <p><input type="radio" name="condition" id="term"><label for="term">I do accept the <a href="#">Terms of conditions</a> <br> <span> of your site</span></label></p>
+                
+                <input type="email" placeholder="Votre E-mail" class="champfull">
+                <label for="term" id="container">
+                    <input type="radio" name="condition" id="term">
+                    <span class="checkmark"></span>
+                    I do accept the <a href="#">Terms of conditions</a> <br> <span> of your site</span>
+                </label>
                <!--bouton envoie-->
-                <p></p><input type="submit" value="Register Badge" class="envoyer"></p>
+                <input type="submit" value="Register Badge" class="envoyer">
         </div>
     </div>
 

@@ -14,7 +14,6 @@ main{
 }
 form{
     justify-content: center;
-  
     display: flex;
     flex-direction: row;
     width: 60%;
@@ -45,7 +44,7 @@ form{
     
     width: 80%;
     margin: auto;
-    padding: 10px;
+  
 }
 #white input:not(#nom1, #nom2,#business1), select:not(#business2),#gradient .champfull, #pays{
     width :100%;
@@ -68,7 +67,7 @@ form{
     border-left-style: hidden;
     border-bottom: 1px solid rgba(0,0,0, 0.4);
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   
 }
 input:focus, select:focus{
@@ -93,7 +92,7 @@ input:focus, select:focus{
     border-left-style: hidden;
     border-bottom: 1px solid rgba(255,255,255,0.5);
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     background:transparent;
     
 }
@@ -139,6 +138,7 @@ input:focus, select:focus{
     border: none;
     padding : 10px 20px 10px 20px;  
     font-weight: bold;
+    margin-top: 30px;
 }
 a{
     font-weight: bold;
@@ -147,12 +147,63 @@ a{
 #gradient option{
     background: rgba(0,0,0, 0.7);
 }
-#gradient p:nth-of-type(6){
-    font-size: 0.9em;
-    line-height: 10px;
-    margin-bottom: 30px;
+
+
+#container {
+    color: white;
+    font-size: 0.8em;
+    margin-top: 12px;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    line-height: 1.1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  #term[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+
+  .checkmark, .checkmark:before{
+	border-radius: 50%;
+	display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-span{
-    position :relative;
-    left:20px;
+
+.checkmark:before{
+	position: relative;
+	content: '';
 }
+
+.checkmark { 
+	width: 10px;
+	height: 10px;
+	background: none;
+	border: 1.5px solid white;
+}
+
+.checkmark:before {
+	width: 80%;
+	height: 80%;
+	top: 10.7%;
+	left: 10.7%;
+	background: white;
+}
+
+  #container:hover input ~ .checkmark:before {
+    background-color: white ;
+  }
+  #container input:checked ~ .checkmark:before {
+    background-color: white;
+  }
