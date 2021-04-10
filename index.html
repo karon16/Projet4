@@ -15,7 +15,7 @@
             <!--Titre-->
             <h1>General Information</h1>
             <!-- Selection de titre-->
-            <select name="Title" id="Title">
+            <select name="Title" id="Title" class="champfull">
                 <option value="">Title</option>
                 <option value="Mister">Mister</option>
                 <option value="Miss">Miss</option>
@@ -27,14 +27,14 @@
             <input type="text" placeholder="Last Name" id="nom2">
 
             <!-- position -->
-            <select name="Title">
+            <select name="Title" class="champfull">
                 <option value="">Position</option>
                 <option value="Mister">Mister</option>
                 <option value="Miss">Miss</option>
                 <option value="Misses">Misses</option>
             </select>
             <!--compagnie de l'utilisateur-->
-            <input type="text" placeholder="Company" >
+            <input type="text" placeholder="Company" class="champfull">
 
             <!--infos boulot-->
                 <input type="text" placeholder="Business Arena" id="business1">
@@ -55,20 +55,20 @@
                 <input type="text" placeholder="Street + Nr" class="champfull">
                 <input type="text" placeholder="Additional Information" class="champfull">
                 
-                <input type="text" pattern="[0-9]{5}" placeholder="Zip Code" id="zip">
+                <input type="text" pattern="[0-9]{5}" placeholder="Zip Code" id="zip" class="small-field">
                 <select name="place" id="place">
                     <option value="">Place</option>
                     <option value="Kinshasa">Kinshasa</option>
                     <option value="Brazza-Ville">Brazza-ville</option>
                 </select>
                 
-                <select name="Country" id="pays" aria-placeholder="">
+                <select name="Country" id="pays" class="champfull">
                     <option value="">Pays</option>
                     <option value="Congo DR">Congo DR</option>
                     <option value="Congo Brazza">Congo Brazza</option>
                 </select>
                 <!--Coordonées-->
-                <input type="number" placeholder="Code +" id="code">
+                <input type="number" placeholder="Code +" id="code" class="small-field">
                 <input type="tel" placeholder="Phone Number" id="phone" maxlength="9">
                 
                 <input type="email" placeholder="Votre E-mail" class="champfull">
@@ -77,7 +77,6 @@
                     <span class="checkmark"></span>
                     I do accept the <a href="#">Terms of conditions</a> <br> <span> of your site</span>
                 </label>
-               <!--bouton envoie-->
                 <input type="submit" value="Register Badge" class="envoyer">
         </div>
     </div>
